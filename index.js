@@ -25,7 +25,12 @@ function dec(n) {
 }
 
 function makeInt(n) {
-  return parseInt(n);
+  if (n.isNaN) {
+    return Nan;
+  }
+    else {
+      return parseFloat(n)
+    }
 }
 
 function preserveDecimal(n) {
