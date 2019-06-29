@@ -29,7 +29,7 @@ function makeInt(n) {
     return Nan;
   }
     else {
-      return parseFloat(n)
+      return parseInt(n);
     }
 }
 
@@ -38,6 +38,6 @@ function preserveDecimal(n) {
     return Nan;
   }
     else {
-      return parseFloat(n)
+      return parseFloat(n);
     }
 }
